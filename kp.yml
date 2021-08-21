@@ -1,8 +1,8 @@
- ---
- -
-    host: all
-    gather_facts: true 
-    become: yes
+---
+-
+  host: all
+  gather_facts: true 
+  become: yes
     tasks:
       - name: get Ip
         debug:
