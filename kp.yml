@@ -8,9 +8,6 @@
        debug:
          msg: >
               Host IPs{{ ansible_default_ipv4.address }}
-  tasks:
-     - name: kubelet svc status
-       ansible.builtin.service:
-                  name: kubelet 
+  
               
 ... 
