@@ -1,12 +1,12 @@
 ---
 -
-  host: all
+  hosts: all
   gather_facts: true 
   become: yes
   tasks:
      - name: get Ip
        debug:
-         msg >
+         msg: >
               Host IPs{{ ansible_ip_addresses }}
               
 ... 
