@@ -9,7 +9,7 @@
       register: statvar
     - name: status of kubelet
       debug: 
-        msg: service state is {{statvar.stdout.active}}
+        msg: service state is {{statvar.stdout.Active}}
 ...   
       
    
