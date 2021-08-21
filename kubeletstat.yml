@@ -4,7 +4,7 @@
   become: yes
   task:
     - name: kubelet svc status
-     ansible.builtin.shell:
+      ansible.builtin.shell:
          cmd: service kubelet status
 ...   
       
