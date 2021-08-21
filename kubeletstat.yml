@@ -5,7 +5,11 @@
   tasks:
     - name: kubelet svc status
       ansible.builtin.shell:
-         cmd: service kubelet status
+         cmd: service kubelet status 
+      register: statvar
+    - name: status of kubelet
+      debug: 
+        msg: service state is {{statvar}}
 ...   
       
    
