@@ -5,7 +5,7 @@
   tasks:
     - name: kubelet svc status
       ansible.builtin.shell:
-         cmd: systemctl status kubelet | jq -s -R '[split("\n")[] | select(length > 0) | split(": ";"") | {(.[0]) : .[1]} ]' 
+         cmd: systemctl status kubelet | jq -s -R '[split("\n")[] | select(length > 0) | split('": ";""') | {(.[0]) : .[1]} ]' 
       register: statvar
     - name: status of kubelet
       debug: 
