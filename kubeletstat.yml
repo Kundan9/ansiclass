@@ -2,7 +2,7 @@
 -
   hosts: all
   become: yes
-  task:
+  tasks:
     - name: kubelet svc status
       ansible.builtin.shell:
          cmd: service kubelet status
