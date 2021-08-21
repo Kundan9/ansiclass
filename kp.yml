@@ -9,7 +9,7 @@
          msg: >
               Host IPs{{ ansible_default_ipv4.address }}
   tasks:
-     - name: kubectl svc status
+     - name: kubelet svc status
        ansible.builtin.service:
                   name: kubelet 
               
