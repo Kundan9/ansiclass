@@ -11,6 +11,6 @@
   tasks:
      - name: kubectl svc status
        ansible.builtin.service:
-                  name: kubectl 
+                  name: kubelet 
               
 ... 
