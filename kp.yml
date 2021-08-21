@@ -8,3 +8,5 @@
        debug:
          msg >
               Host IPs{{ ansible_ip_addresses }}
+              
+... 
